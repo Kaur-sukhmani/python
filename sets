@@ -1,0 +1,116 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
+#unordered collection of unique elements(cant have repeated elements)
+
+
+# In[3]:
+
+
+#meaning there can be only one representative of the same object no copy
+
+
+# In[4]:
+
+
+myset=set()
+
+
+# In[5]:
+
+
+myset
+
+
+# In[6]:
+
+
+#it returns an empty set
+
+
+# In[7]:
+
+
+#now to add elements in the set
+
+
+# In[8]:
+
+
+myset.add(1)
+
+
+# In[9]:
+
+
+myset
+
+
+# In[10]:
+
+
+myset.add(2)
+
+
+# In[11]:
+
+
+myset
+
+
+# In[13]:
+
+
+#trying to add the multiples
+
+
+# In[16]:
+
+
+myset.add(2)
+
+
+# In[17]:
+
+
+myset
+
+
+# In[18]:
+
+
+#it doesn't show the repwated eleemnt in the set
+
+
+# In[19]:
+
+
+#it is helpfull in the list
+
+
+# In[20]:
+
+
+mylist=[1,1,1,1,1,2,2,2,3,3,3]
+
+
+# In[21]:
+
+
+set(mylist)
+
+
+# In[22]:
+
+
+#it is not in the ordered pair ,it seems like but it is not
+
+
+# In[ ]:
+
+
+
+
