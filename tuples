@@ -1,0 +1,137 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+#similar to lists
+#they differ in immutability
+#once an element is assigned it cannot be changed
+#tuples are in paranthesis(1,2,3)
+
+
+# In[2]:
+
+
+t=(1,2,3)#tuples
+
+
+# In[3]:
+
+
+mylist=[1,2,3]
+
+
+# In[4]:
+
+
+type(t)#to identify the type 
+
+
+# In[5]:
+
+
+type(mylist)
+
+
+# In[6]:
+
+
+len(t)#to check the length
+
+
+# In[7]:
+
+
+t
+
+
+# In[8]:
+
+
+t=('one',2)#in tuple we can mix the types like stirng and the integer
+
+
+# In[9]:
+
+
+t[0]
+
+
+# In[10]:
+
+
+t[-1]
+
+
+# In[11]:
+
+
+t=('a','a','b')
+
+
+# In[12]:
+
+
+#to check how many times a is present 
+
+
+# In[13]:
+
+
+t.count('a')
+
+
+# In[15]:
+
+
+t.index('a')#the first time a is present in a tuple
+
+
+# In[16]:
+
+
+t.index('b')
+
+
+# In[18]:
+
+
+#immuatibility
+
+
+# In[19]:
+
+
+t
+
+
+# In[ ]:
+
+
+mylist
+
+
+# In[22]:
+
+
+mylist[0]='new'
+
+
+# In[23]:
+
+
+mylist
+
+
+# In[24]:
+
+
+t[0]='new'
+
+
+# In[ ]:
+
+
+#here comes the error when we try to change the object
+
