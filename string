@@ -1,0 +1,428 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# *strings are the ordered sequence it means we can use indexing and slicing to grab sub-sections of the string 
+# OR
+# slicing to grab subsections of the string because we know each character has a specific position to be in an indexing notation.
+
+# In[1]:
+
+
+'hello'
+
+
+# In[2]:
+
+
+"world"
+
+
+# In[3]:
+
+
+'this is also a string'
+
+
+# mixing single and double quotes
+
+# In[4]:
+
+
+"I'm going on a run "
+
+
+# to print the string 
+
+# In[5]:
+
+
+print("hello")
+
+
+# this is important because if we use two stirngs at the same time then it will  print the last string only 
+# so, to print both the strings we use the print function
+
+# In[7]:
+
+
+"hello"
+'hi'
+
+
+# In[8]:
+
+
+print("hello")
+print("hi sukhmani")
+
+
+# //ESAPE SEQUENCE
+
+# In[11]:
+
+
+print("hello \n world")
+
+
+# \n indicates new line
+
+# In[12]:
+
+
+print('hello\tworld')
+
+
+# In[16]:
+
+
+len('hello')#to check the lenght of the string 
+
+
+# STING INDEXING 
+
+# In[17]:
+
+
+mystring = "Hello World"
+
+
+# In[18]:
+
+
+mystring
+
+
+# In[19]:
+
+
+mystring[1]
+
+
+# In[20]:
+
+
+mystring[8]
+
+
+# In[23]:
+
+
+mystring[9]
+
+
+# In[26]:
+
+
+mystring[-2]#both +ve and -ve strings indexing to grab the letters
+
+
+# subsets
+
+# In[27]:
+
+
+mystring="abcdefghijk"
+
+
+# In[28]:
+
+
+mystring
+
+
+# In[29]:
+
+
+mystring[2:]#2-strart till the end
+
+
+# In[31]:
+
+
+mystring[:3]#from strating till the end
+
+
+# In[32]:
+
+
+#both strat and end
+
+
+# In[33]:
+
+
+mystring[3:6]#till 6 and 6 does not get included
+
+
+# In[34]:
+
+
+mystring[1:3]
+
+
+# stepsize
+
+# In[35]:
+
+
+mystring[::2]#from starting till the end with step size of 2
+
+
+# In[36]:
+
+
+mystring[::-1]#reverses the string
+
+
+# In[37]:
+
+
+mystring[2:7:2]
+
+
+# STRING PROPERTIES
+
+# 1.IMMAUTABLILITY(they cant usr undexing to change individual elements of a string 
+
+# In[38]:
+
+
+name='sam'
+
+
+# In[39]:
+
+
+last_letters=name[1:]
+
+
+# In[40]:
+
+
+last_letters
+
+
+# In[41]:
+
+
+'P'+last_letters
+
+
+# In[42]:
+
+
+x='Hello World'
+
+
+# In[43]:
+
+
+x+"it is a beautiful outside"
+
+
+# In[44]:
+
+
+#multiple strings concatination 
+
+
+# In[45]:
+
+
+letters='z'
+
+
+# In[46]:
+
+
+letters*10
+
+
+# In[47]:
+
+
+2+3
+
+
+# In[48]:
+
+
+'2'+'3'#dynamic typing
+
+
+# In[49]:
+
+
+x='Hello World'
+
+
+# In[52]:
+
+
+x.upper()
+
+
+# In[53]:
+
+
+x.split()
+
+
+# In[54]:
+
+
+x.split('i')
+
+
+# In[55]:
+
+
+x='hi, this is a string '
+
+
+# In[56]:
+
+
+x.split()
+
+
+# In[57]:
+
+
+x.split('i')
+
+
+# PRINT 
+# FORMATTING
+# WITH
+# STRINGS
+
+# 1..format() method
+
+# syntax is
+# 'string {}'.format('something1')
+
+# In[58]:
+
+
+print('This is a string {}'.format('INSERTED'))
+
+
+# In[59]:
+
+
+#after indexing position
+
+
+# In[60]:
+
+
+print('the {}{}{}'.format('fox','brown','quick'))
+
+
+# In[61]:
+
+
+print('the {2} {1} {0}'.format('fox','brown','quick'))
+
+
+# In[62]:
+
+
+print('the {0} {0} {0}'.format('fox','brown','quick'))
+
+
+# In[63]:
+
+
+#assining variables
+
+
+# In[67]:
+
+
+print('the {q} {b} {f}'.format(f='fox',b='brown',q='quick'))
+
+
+# float formatting follows "{value:width.precisionf}"
+
+# In[68]:
+
+
+result=100/777
+
+
+# In[69]:
+
+
+result
+
+
+# In[70]:
+
+
+print("the result was {r:1.3f}".format(r=result))
+
+
+# In[71]:
+
+
+print("the result was {r:10.3f}".format(r=result))
+
+
+# In[72]:
+
+
+print("the result was {r:10.5f}".format(r=result))
+
+
+# In[73]:
+
+
+result=104.12345
+
+
+# In[74]:
+
+
+print("the result was {r:1.2f}".format(r=result))
+
+
+# f strings 
+
+# In[75]:
+
+
+name="Jose"
+
+
+# In[76]:
+
+
+print(f"hello, his name is {name}")
+
+
+# In[77]:
+
+
+name="sam"
+age=2
+
+
+# In[78]:
+
+
+print(f"his name is {name} and age is {age}")
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
