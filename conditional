@@ -1,0 +1,262 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ### IF ,ELIF,ELSE
+
+# In[1]:
+
+
+#syntax of if/else statement 
+
+
+# In[2]:
+
+
+if some_statemnt:
+   #execute some code
+else:
+   #execute some code
+
+
+# In[8]:
+
+
+if some_codition :
+    #execute some code
+elif some_other_condition:
+    #do some code
+else:
+    #do some code
+
+
+# In[6]:
+
+
+hungry=False
+if hungry:
+    print('Its true!')
+else :
+    print('false')
+
+
+# In[9]:
+
+
+loc='Bank'
+if loc=='Auto shop':
+    print("cars are coll!")
+else:
+    print("I do not know much")
+
+
+# In[10]:
+
+
+loc='Bank'
+if loc=='Auto shop':
+    print("cars are coll!")
+elif loc=='Bank':
+    print("Money is cool!")
+else:
+    print("I do not know much")
+
+
+# In[12]:
+
+
+name='sammy'
+
+if name=='frankie':
+    print("hello frankie")
+elif name=='sammy':
+    print("hello sammy")
+else:
+    print("what is your name")
+
+
+# FOR LOOP 
+
+# In[13]:
+
+
+#SYNTAX FOR FOR LOOP
+my_iterable =[1,2,3]
+for item_name in myiterable:
+    print(item_name)
+
+
+# In[14]:
+
+
+mylist=[1,2,3,4,5,6,7,8,9,10]
+
+
+# In[16]:
+
+
+for num in mylist:
+    print(num)
+
+
+# In[17]:
+
+
+for jelly in mylist:
+    print('hello')
+
+
+# In[18]:
+
+
+#to print only the even number 
+
+
+# In[21]:
+
+
+for num in mylist:
+    if (num%2==0):
+         print(num)
+   
+    
+
+
+# In[25]:
+
+
+for num in mylist:
+    if (num%2==0):
+         print(num)
+    else:
+        print(f'odd number : {num}')
+
+
+# In[28]:
+
+
+list_sum=0
+
+for num in mylist:
+    list_sum=list_sum +num
+print(list_sum)
+
+
+# In[30]:
+
+
+list_sum=0
+
+for num in mylist:
+    list_sum=list_sum +num
+    print(list_sum)
+
+
+# In[31]:
+
+
+mystring='hello world'
+for letter in mystring:
+    print(letter)
+
+
+# In[32]:
+
+
+tupp=(1,2,3)
+for item in tupp:
+    print(item)
+
+
+# In[33]:
+
+
+mylist=[(1,2),(3,4),(5,6),(7,8)]
+
+
+# In[34]:
+
+
+len(mylist)
+
+
+# In[35]:
+
+
+for item in mylist:
+    print(item)
+
+
+# In[36]:
+
+
+#tuple unpacking 
+
+
+# In[38]:
+
+
+for (a,b) in mylist:
+    print(b)
+
+
+# In[40]:
+
+
+mylist=[(1,2,3),(4,5,6),(7,8,9)]
+
+
+# In[41]:
+
+
+for a,b,c in mylist:
+    print(b)
+
+
+# In[42]:
+
+
+d={'k1':1,'K2':2,'K3':3}
+for item in d:
+    print(item)
+
+
+# In[43]:
+
+
+#to print along with the items
+for ittem in d.items():
+    print(item)
+
+
+# In[48]:
+
+
+for key,value in d.values():
+    print(value)
+
+
+# while loop
+
+# In[ ]:
+
+
+x=0
+
+while x<5:
+    print(f'the current value of x is {x}')
+    x=x+1
+else:
+    print("X is not less than 5")
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
