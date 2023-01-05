@@ -1,0 +1,198 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+2==2
+
+
+# In[2]:
+
+
+2==1
+
+
+# In[4]:
+
+
+'hello'=='bye'
+
+
+# In[5]:
+
+
+#on comparing capitalization counts.for eg;
+
+
+# In[6]:
+
+
+'Bye'=='bye'
+
+
+# In[8]:
+
+
+'2'==2
+#one is string and the other is variable
+
+
+# In[9]:
+
+
+2.0==2
+
+
+# In[11]:
+
+
+3!=3
+#3 is not equal to 3
+
+
+# In[12]:
+
+
+4!=5
+
+
+# In[13]:
+
+
+2>1
+
+
+# In[14]:
+
+
+1>2
+
+
+# In[15]:
+
+
+2<5
+
+
+# In[16]:
+
+
+2>=2
+
+
+# In[17]:
+
+
+4<=1
+
+
+# Combining comparison operators
+# they are:
+# 1.and
+# 2.or
+# 3.not
+
+# In[18]:
+
+
+1<2
+
+
+# In[19]:
+
+
+2<3
+
+
+# In[20]:
+
+
+#they 2 individual is true but what if they combine 
+
+
+# In[21]:
+
+
+1<2<3 #chaining
+
+
+# In[22]:
+
+
+1<2>3
+
+
+# In[23]:
+
+
+#we cant use chaining in large comparison it could be wrong 
+
+
+# In[24]:
+
+
+1<2 and 2<3
+
+
+# In[25]:
+
+
+('h'=='h') and (2==2)
+
+
+# In[26]:
+
+
+1==1 and 2==2
+
+
+# In[28]:
+
+
+100==1 or 2==2 #it is true even if even 1 true
+
+
+# In[29]:
+
+
+100==1 or 200==2 
+
+
+# In[30]:
+
+
+1==1
+
+
+# In[31]:
+
+
+not(1==1)
+
+
+# In[32]:
+
+
+400>5000
+
+
+# In[33]:
+
+
+not(400>5000)
+
+
+# ## IF ,ELIF , ELSE
+
+# In[35]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
