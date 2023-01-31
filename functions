@@ -1,0 +1,361 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+#to define a funciton we use def keyword
+
+
+# In[2]:
+
+
+def mylist():
+    print('hello')
+
+
+# In[3]:
+
+
+mylist()
+
+
+# In[4]:
+
+
+#only snake casing is allowed that is all lowercase and underscore
+
+
+# In[8]:
+
+
+def name_of_function(name):
+   '''execting explains the functijon '''
+   print('hello'+ name)
+
+
+# In[9]:
+
+
+name_of_function('love')
+
+
+# In[10]:
+
+
+def add(num1,num2):
+    return num1+num2
+
+
+# In[11]:
+
+
+add(2,3)
+
+
+# In[12]:
+
+
+#we can save the output when its return 
+
+
+# In[13]:
+
+
+def say_hello():
+    print('hello')
+    print('how')
+    print('u')
+
+
+# In[14]:
+
+
+say_hello()
+
+
+# In[16]:
+
+
+def say_hello(name):
+    print(f'hello {name}')
+
+
+# In[18]:
+
+
+say_hello('sukhmani')
+
+
+# In[19]:
+
+
+#if we forgot to add the naem in the output so we had to write the default value
+
+
+# In[23]:
+
+
+def say_hello(name='default'):
+    print(f'hello{name}')
+
+
+# In[25]:
+
+
+say_hello()
+
+
+# In[29]:
+
+
+#function with logic
+
+'''% returns the remainder
+eg: 2%2==0
+we can use it for finding the even numBber      
+'''
+'\n% returns the remainder\neg: 2%2==0\nwe can use it for finding the even numBber      \n'
+def check_even(num):
+    result=num%2==0
+    return result
+20
+check_even(20)
+True
+check_even(3)
+False
+
+
+# In[30]:
+
+
+def check_list_even(my_list):
+    for number in my_list:
+        if number%2==0:
+            return True
+        else:
+            pass
+
+
+# In[31]:
+
+
+mylist=[2,34,5,66,73,3,4556]
+
+
+# In[32]:
+
+
+check_list_even(mylist)
+
+
+# In[33]:
+
+
+#to return all the even numbers from the list
+
+
+# In[39]:
+
+
+def check_list_even(my_list):
+    even_number=[]
+    for number in my_list:
+        if number%2==0:
+            even_number.append(number)
+        else:
+            pass
+    return even_number
+
+
+# In[40]:
+
+
+check_list_even(mylist)
+
+
+# TO UNPACKING WITH PYTHON FUNCTION
+# 
+
+# In[41]:
+
+
+#how till now we were doing 
+
+
+# In[42]:
+
+
+stock_prices=[('apple',200),('banana',400),('mango',500)]
+
+
+# In[43]:
+
+
+for item in stock_prices:
+    print(item)
+
+
+# In[44]:
+
+
+for tick,prices in stock_prices:
+    print(tick)
+
+
+# In[45]:
+
+
+#now in functions the tuple unpacking 
+
+
+# In[46]:
+
+
+work_hours=[('Abby',100),('sukh',900),('love',300),('jap',200)]
+
+
+# In[53]:
+
+
+def employee_check(work_hours):
+    current_max=0
+    employee_of_month=''
+for employee,hours in work_hours:
+    if hours > current_max:
+        current_max = hours
+        employee_of_month = employee
+     
+    else:
+        pass
+    
+return (employee_of_month,current_max)
+     
+
+
+# INTERACTION BETWEEN FUNCTIONS
+
+# HOW TO SHUFFLE A LIST IN PYHTON
+
+# In[55]:
+
+
+ex=[1,2,3,4,5]
+
+
+# In[56]:
+
+
+from random import shuffle
+
+
+# In[57]:
+
+
+shuffle(ex)
+
+
+# In[58]:
+
+
+ex
+
+
+# In[59]:
+
+
+#game 
+
+
+# In[60]:
+
+
+mylist=['','O','']
+
+
+# In[64]:
+
+
+def shuffle_list(mylist):
+    #take in list,and return shuffle versioned
+    shuffle(mylist)
+    
+    return mylist
+
+
+# In[65]:
+
+
+mylist
+
+
+# In[67]:
+
+
+shuffle_list(mylist)
+
+
+# In[68]:
+
+
+#another guessing game
+
+
+# In[ ]:
+
+
+def player_guess():
+    guess = ''
+    while guess not in ['0','1','2']:
+        guess=input("enter any number from 0,1,2: ")
+    return int(guess)
+
+
+# In[ ]:
+
+
+player_guess()
+
+
+# In[ ]:
+
+
+#warmup section
+
+
+# In[ ]:
+
+
+def lesser_of_two_evens(a,b):
+    less=a
+    if a<b:
+        less=b
+    else:
+        pass
+    return less
+
+
+# In[ ]:
+
+
+# Check
+lesser_of_two_evens(2,4)
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
