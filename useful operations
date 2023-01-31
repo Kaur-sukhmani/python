@@ -1,0 +1,231 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# Usefull operators in python 
+
+# In[1]:
+
+
+#syntax:::range(start,end,stepsize)
+
+
+# In[2]:
+
+
+mylist=[1,2,3]
+for num in range(10):
+    print(num)
+
+
+# In[3]:
+
+
+for num in range(0,5):
+    print(num)
+
+
+# In[5]:
+
+
+for num in range(0,11,2):
+    print(num)
+
+
+# In[7]:
+
+
+list(range(0,11,2))
+    
+
+
+# In[12]:
+
+
+index_count=0
+for letter in 'abcde':
+    print('at index {} the letter is {}'.format(index_count,letter))
+    index_count+=1
+
+
+# 
+
+# for this we have a function known as enumerate()
+
+# In[13]:
+
+
+#example
+
+
+# In[14]:
+
+
+word='abcde'
+for item in enumerate(word):
+    print(item)
+
+
+# In[22]:
+
+
+#to print the index and the letter individually
+for index,letter in enumerate(word):
+    print(index)
+    print(letter)
+    print('\n')
+
+
+# to zip 2 functions together
+
+# In[23]:
+
+
+mylist=[1,2,3]
+mylist2=['a','b','c']
+zip(mylist,mylist2)
+
+
+# In[24]:
+
+
+for item in zip(mylist,mylist2):
+    print(item)
+
+
+# In[25]:
+
+
+list(zip(mylist,mylist2))
+
+
+# In[27]:
+
+
+#to unpack the tuple
+for a,b in zip(mylist,mylist2):
+    print(b)
+
+
+# In[28]:
+
+
+#to check if smth is in the list
+'x' in [1,2,3]
+
+
+# In[29]:
+
+
+'x' in ['x','t','z']
+
+
+# In[30]:
+
+
+#it also works in the string
+'a' in 'a world'
+
+
+# In[31]:
+
+
+'mykey' in {'mykey':234}
+
+
+# In[32]:
+
+
+d={'mykey':234}
+234 in d.keys()
+
+
+# In[33]:
+
+
+d={'mykey':234}
+234 in d.values()
+
+
+# In[34]:
+
+
+mylist=[10,20,30,40,50]
+#to checkt the max and min 
+min(mylist)
+
+
+# In[35]:
+
+
+max(mylist)
+
+
+# builtin library
+
+# In[36]:
+
+
+from random import shuffle
+
+
+# In[37]:
+
+
+shuffle(mylist)
+
+
+# In[38]:
+
+
+mylist
+
+
+# In[40]:
+
+
+#to take the random integer from the list
+from random import randint 
+randint(0,100)
+
+
+# In[41]:
+
+
+#its just the random integera
+
+
+# In[42]:
+
+
+input('enter a number here:')#to ask anything from the user 
+
+
+# In[43]:
+
+
+#its always in the form of string 
+
+
+# In[44]:
+
+
+result=input('whats your name?')
+
+
+# In[45]:
+
+
+result
+
+
+# In[46]:
+
+
+type(result)
+
+
+# In[ ]:
+
+
+
+
