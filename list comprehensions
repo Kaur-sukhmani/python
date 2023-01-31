@@ -1,0 +1,238 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+#to make each character a string 
+
+
+# In[6]:
+
+
+#first make an empty list
+mystring='hello'
+
+
+# In[7]:
+
+
+mylist=[]
+
+
+# In[8]:
+
+
+for letter in mystring:
+    mylist.append(letter)
+
+
+# In[10]:
+
+
+mylist
+
+
+# In[11]:
+
+
+#lsit comprehensions
+
+
+# In[12]:
+
+
+mylist=[letter for letter in mystring ]
+
+
+# In[13]:
+
+
+mylist
+
+
+# In[14]:
+
+
+mylist=[hey for hey in mystring ]
+
+
+# In[15]:
+
+
+mylist
+
+
+# In[16]:
+
+
+mylist=[x for x in 'word']
+
+
+# In[17]:
+
+
+mylist
+
+
+# In[18]:
+
+
+mylist
+
+
+# In[19]:
+
+
+mylist=[element for element in 'wordtwo']
+
+
+# In[20]:
+
+
+mylist
+
+
+# In[21]:
+
+
+mylist=[x for x in range(0,11)]
+
+
+# In[22]:
+
+
+mylist
+
+
+# In[23]:
+
+
+#to get a particular sequencfe in that string
+
+
+# In[24]:
+
+
+mylist=[num**2 for num in mylist]
+
+
+# In[25]:
+
+
+mylist
+
+
+# In[26]:
+
+
+#to gett the even number inthe list
+
+
+# In[27]:
+
+
+mylist=[x for x in range(0,11) if x%2==0]
+
+
+# In[28]:
+
+
+mylist
+
+
+# In[29]:
+
+
+celsius =[0,10,20,4.5]
+
+
+# In[30]:
+
+
+fahrenheit=[((9/5)*temp+32) for temp in celsius]
+
+
+# In[31]:
+
+
+fahrenheit
+
+
+# In[32]:
+
+
+#or we can do is 
+
+
+# In[33]:
+
+
+fahrenheit=[]
+
+
+# In[34]:
+
+
+for temp in celsius:
+    fahrenheit.append((9/5)*temp+32)
+
+
+# In[35]:
+
+
+fahrenheit
+
+
+# In[36]:
+
+
+mylist=[]
+
+for x in [2,4,5]:
+    for y in [1,10,1000]:
+        mylist.append(x*y)
+
+
+# In[37]:
+
+
+mylist
+
+
+# In[38]:
+
+
+#python and the python documentation
+
+
+# In[39]:
+
+
+mylist=[1,2,3]
+mylist.append(4)
+
+
+# In[40]:
+
+
+mylist
+
+
+# In[41]:
+
+
+mylist.pop(2)
+
+
+# In[42]:
+
+
+mylist
+
+
+# In[ ]:
+
+
+mylist.
+
