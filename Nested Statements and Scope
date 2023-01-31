@@ -1,0 +1,95 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# LEGB Rule:
+# 
+# L: Local — Names assigned in any way within a function (def or lambda), and not declared global in that function.
+# 
+# E: Enclosing function locals — Names in the local scope of any and all enclosing functions (def or lambda), from inner to outer.
+# 
+# G: Global (module) — Names assigned at the top-level of a module file, or declared global in a def within the file.
+# 
+# B: Built-in (Python) — Names preassigned in the built-in names module : open, range, SyntaxError,...
+
+# Quick examples of LEGB
+# Local
+
+# In[1]:
+
+
+# x is local here:
+f = lambda x:x**2
+
+
+# Enclosing function locals
+# This occurs when we have a function inside a function (nested functions)
+
+# In[2]:
+
+
+name = 'This is a global name'
+
+def greet():
+    # Enclosing function
+    name = 'Sammy'
+    
+    def hello():
+        print('Hello '+name)
+    
+    hello()
+
+greet()
+
+
+# Global
+
+# In[3]:
+
+
+print(name)
+
+
+# Built-in
+
+# In[4]:
+
+
+len
+
+
+# In[5]:
+
+
+x = 50
+
+def func(x):
+    print('x is', x)
+    x = 2
+    print('Changed local x to', x)
+
+func(x)
+print('x is still', x)
+
+
+# In[6]:
+
+
+x = 50
+
+def func():
+    global x
+    print('This function is now using the global x!')
+    print('Because of global x is: ', x)
+    x = 2
+    print('Ran func(), changed global x to', x)
+
+print('Before calling func(), x is: ', x)
+func()
+print('Value of x (outside of func()) is: ', x)
+
+
+# In[ ]:
+
+
+
+
